@@ -12,6 +12,6 @@ object Sigmoid extends ActivationFunction{
    * @return the calculated result of the sigmoid function
    */
   def calculate(function: () =>  Double) : Double = {
-    return 1 / (1 + -1 * Math.exp(function()));
+    return 1 / (1 + Math.exp(-1 * function()));
   }
 }

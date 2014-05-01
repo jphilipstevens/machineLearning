@@ -23,10 +23,8 @@ class NeuralNetwork(val hiddenLayerNeuronCount: Int, val hiddenLayerSize: Int, v
     layers.toList
   }
 
-  def runFeedForward() = {
-    for(i <- 0 until hiddenLayerNeuronCount){
 
-    }
+  def calculateCost() : Double = {
+    return 0;
   }
-
 }
