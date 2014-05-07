@@ -1,9 +1,9 @@
-package com.jono.nn.network
+package scala.nn.network
 
 import com.jono.nn.{Dendrite, Neuron}
 import scala.collection.mutable.ArrayBuffer
 import com.jono.nn.functions.step.ActivationFunction
-import scala.math.{exp, pow, random, sqrt}
+import scala.math.random
 
 /**
  * This class represents one layer of a neural network.
