@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neuralnetwork.iml" filepath="$PROJECT_DIR$/.idea/modules/neuralnetwork.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neuralnetwork-build.iml" filepath="$PROJECT_DIR$/.idea/modules/neuralnetwork-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/machinelearning.iml" filepath="$PROJECT_DIR$/.idea/modules/machinelearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/machinelearning-build.iml" filepath="$PROJECT_DIR$/.idea/modules/machinelearning-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project/.idea/modules/project.iml" filepath="$PROJECT_DIR$/project/.idea/modules/project.iml" />
     </modules>
   </component>
 </project>
