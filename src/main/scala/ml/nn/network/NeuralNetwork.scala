@@ -1,12 +1,13 @@
-package scala.nn.network
+package scala.ml.nn.network
 
 import scala.collection.mutable.ArrayBuffer
+import scala.ml.data.DataSet
 
 /**
  *
  * Created by jono on 26/04/14.
  */
-class NeuralNetwork(val hiddenLayerNeuronCount: Int, val hiddenLayerSize: Int, val inputLayer: NetworkLayer, val getOutputLayer: NetworkLayer => NetworkLayer) {
+class NeuralNetwork(val hiddenLayerNeuronCount: Int, val hiddenLayerSize: Int, val inputLayer: DataSet, val getOutputLayer: NetworkLayer => NetworkLayer) {
   /**
    * hiddenLaterNeuronCount:the size of the hidden layer (not including the bias)
    */
@@ -17,7 +18,6 @@ class NeuralNetwork(val hiddenLayerNeuronCount: Int, val hiddenLayerSize: Int, v
    */
   val networkLayers = {
     val layers = new ArrayBuffer[NetworkLayer](hiddenLayerSize)
-    layers += inputLayer
     for (i <- 1 until (hiddenLayerSize + 1)) {
       layers += new NetworkLayer(hiddenLayerNeuronCountWithBias, layers(i - 1))
     }

@@ -1,7 +1,7 @@
-package scala.nn.functions.step
+package scala.ml.nn.functions.step
 
 import org.specs2.mutable._
-import com.jono.nn.functions.step.Sigmoid
+import scala.ml.nn.functions.step.Sigmoid.calculate
 
 /**
  * Simple test for assuring the sigmodi function works
@@ -10,7 +10,7 @@ import com.jono.nn.functions.step.Sigmoid
 class SigmoidSpec extends Specification {
   "Sigmoid function" should {
     "resolve input of 1 to about 0.731058579" in {
-      val result = Sigmoid.calculate(
+      val result = calculate(
         () => {
           1.0d
         })

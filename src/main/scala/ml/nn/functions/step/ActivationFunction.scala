@@ -1,4 +1,4 @@
-package com.jono.nn.functions.step
+package scala.ml.nn.functions.step
 
 /**
  * Trait for any activation function
@@ -6,7 +6,7 @@ package com.jono.nn.functions.step
  */
 trait ActivationFunction {
 
-  def calculate(function: () =>  Double) : Double;
+  def calculate(function: () => Double): Double
 }
 
 /**
@@ -14,7 +14,7 @@ trait ActivationFunction {
  */
 object ActivationFunction {
 
-  def getActivationFunction() : ActivationFunction = {
-    return Sigmoid
-  }
+  def getActivationFunction: ActivationFunction =
+    Sigmoid
+
 }

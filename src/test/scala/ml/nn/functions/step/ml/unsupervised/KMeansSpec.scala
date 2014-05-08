@@ -1,10 +1,11 @@
-package scala.nn.functions.step.ml.unsupervised
+package scala.ml.nn.functions.step.ml.unsupervised
 
 import org.specs2.mutable.Specification
 import scala.collection.mutable.ArrayBuffer
 import scala.ml.unsupervised.{KMeans, KMeansDataset}
 
 /**
+ * This is a spec for testing K-Means clustering
  * Created by jono on 06/05/14.
  */
 class KMeansSpec extends Specification {
